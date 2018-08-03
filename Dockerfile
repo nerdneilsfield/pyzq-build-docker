@@ -42,5 +42,5 @@ MAINTAINER  Deng Qi <dengqi935@gmail.com>
 #     make -j 8 && make install && \
 #     cd .. && \
 
-COPY setup.sh /tmp/setup.sh
-RUN sh setup.sh && rm -rf /var/cache/apt/archives
+COPY ./setup.sh /tmp/setup.sh
+RUN cd /temp/ && sh setup.sh && rm -rf /var/cache/apt/archives
