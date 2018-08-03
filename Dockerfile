@@ -43,4 +43,4 @@ MAINTAINER  Deng Qi <dengqi935@gmail.com>
 #     cd .. && \
 
 COPY ./setup_host.sh /tmp/setup.sh
-RUN cd /temp/ && sh setup.sh && rm -rf /var/cache/apt/archives
+RUN cd /tmp/ && sh setup.sh && rm -rf /var/cache/apt/archives
