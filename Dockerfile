@@ -43,5 +43,5 @@ MAINTAINER  Deng Qi <dengqi935@gmail.com>
 #     cd .. && \
 
 COPY ./setup_host.sh /tmp/setup.sh
-RUN apt-get update && apt-get install build-essential wget
+RUN apt-get update && apt-get -y install build-essential wget
 RUN cd /tmp/ && sh setup.sh && rm -rf /var/cache/apt/archives
